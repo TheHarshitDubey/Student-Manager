@@ -74,17 +74,21 @@ class _AddEditScreenState extends State<AddEditScreen> {
               
               controller: nameController,
               decoration: const InputDecoration(
-              
+               border: OutlineInputBorder(),
                 labelText: "Name"),
             ),
             TextField(
               controller: ageController,
               keyboardType: TextInputType.number,
-              decoration: const InputDecoration(labelText: "Age"),
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: "Age"),
             ),
             TextField(
               controller: courseController,
-              decoration: const InputDecoration(labelText: "Course"),
+              decoration: const InputDecoration(
+                 border: OutlineInputBorder(),
+                labelText: "Course"),
             ),
             const SizedBox(height:15 ),
             ElevatedButton(

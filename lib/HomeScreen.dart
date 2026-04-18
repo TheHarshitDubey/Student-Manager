@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('Students')),
       body: students.isEmpty
-          ? const Center(child: Text("No Students Found"))
+          ? const Center(child: Text("Add Student"))
           : ListView.builder(
               itemCount: students.length,
               itemBuilder: (context, index) {
